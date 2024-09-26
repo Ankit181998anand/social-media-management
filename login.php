@@ -1,6 +1,6 @@
 <?php
     // Include the database connection
-    require_once 'dbcon.php';
+    // require_once 'dbcon.php';
     session_start(); // Start the session
 
     if (isset($_POST['submit'])) {
@@ -52,29 +52,43 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="container h-100 d-flex justify-content-center align-items-center">
+    <div class="container login-main h-100 d-flex justify-content-center align-items-center">
         <div class="login-container col-10 col-sm-8 col-md-6 col-lg-4">
-            <h1>LOGIN PAGE</h1>
-
+            <h1>Login</h1>
+            <p>Sign in to your account</p>
             <!-- Display error message if any -->
             <?php if (isset($error)) : ?>
                 <div class="alert alert-danger"><?php echo $error; ?></div>
             <?php endif; ?>
 
             <form method="POST" action="">
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="mb-3">
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="submit" name="submit" class="btn btn-primary login-btn">Login</button>
-            </form>
+    <div class="mb-3 input-group">
+        <span class="input-group-text" id="email-icon">
+            <i class="fas fa-envelope"></i>
+        </span>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="mb-3 input-group">
+        <span class="input-group-text" id="password-icon">
+            <i class="fas fa-lock"></i>
+        </span>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+    </div>
+    <button type="submit" name="submit" class="btn btn-primary login-btn">Login</button>
+</form>
+
+        </div> 
+        <div class="image-container col-10 col-sm-8 col-md-6 col-lg-4">
+            <div class="social-icons">
+                <img src='./assets/images/pngegg (1).png' class='img-fluid'></img>
+            </div>
         </div>
     </div>
 

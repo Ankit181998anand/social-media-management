@@ -1,70 +1,89 @@
-/*CSS for login and register page */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     height: 100vh;
     font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(135deg, #89f7fe, #66a6ff);
+    background: #dedede;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
+/* Login Container */
 .login-container {
-    background: rgba(255, 255, 255, 0.2); 
+    background: #fff;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
     width: 100%;
-    text-align: center;
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    max-width: 400px;
+    height: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.login-container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    background: linear-gradient(135deg, #00FFFF, #FF00FF); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    background-clip: text; 
-    color: transparent; 
-    text-transform: uppercase; 
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: #FF00FF; 
-    color: white;
+/* Register Container */
+.register-container {
+    background: #fff;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
+/* Headings */
+.login-container h1, .login-container p,
+.register-container h1 {
+    text-align: left;
+}
 
+/* Form Control */
 .login-container .form-control {
     margin-bottom: 15px;
     border-radius: 5px;
-    height: 45px;
+    height: auto;
     font-size: 1rem;
 }
 
+/* Input Group Styling */
+.input-group .input-group-text, 
+.input-group .form-control {
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.form-control {
+    height: auto;
+}
+
+/* Login Button */
 .login-btn {
-    width: 50%;
+    width: 100%;
+    max-width: 200px;
     height: 50px;
     font-size: 1.2rem;
-    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-.login-btn:hover {
-    background-color: #0056b3;
-}
-
+/* Extra Options Links */
 .extra-options {
     margin-top: 20px;
 }
@@ -77,4 +96,70 @@ body {
 .extra-options a:hover {
     color: #0056b3;
     text-decoration: underline;
+}
+
+/* Image Container */
+.image-container {
+    background: rgb(4, 25, 252); 
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    overflow: hidden;
+}
+
+/* Social Icons Background */
+.social-icons {
+    height: 100%;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .login-container, .register-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .login-main{
+        flex-direction: column !important;
+    }
+     .register-container {
+        width: 90%;
+        padding: 20px;
+    }
+    .login-container{
+        width: 100%;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .register-container {
+        width: 90%;
+        padding: 15px;
+    }
+    .login-container{
+        width: 100%;
+    }
+    .image-container {
+        max-width:100%;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
 }
