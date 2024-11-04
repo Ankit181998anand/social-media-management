@@ -1,6 +1,6 @@
 <?php
 // Include the database connection
-require_once 'dbcon.php';
+// require_once 'dbcon.php';
 session_start(); // Start the session
 
 if (isset($_POST['submit'])) {
