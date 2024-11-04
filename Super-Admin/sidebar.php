@@ -25,7 +25,7 @@
                 <i class="bi bi-file-earmark-text icon-margin text-secondary"></i> Trade <i class="bi bi-chevron-down float-end text-secondary"></i>
             </a>
             <ul class="dropdown-menu bg-dark border-0" aria-labelledby="tradeDropdown">
-                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-plus-square"></i> Create Post</a></li>
+                <li><a class="dropdown-item text-white" href="./createPost.php"><i class="bi bi-plus-square"></i> Create Post</a></li>
                 <li><a class="dropdown-item text-white" href="#"><i class="bi bi-eye"></i> View Post</a></li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
                 <i class="bi bi-file-earmark-text icon-margin text-secondary"></i> Marketing <i class="bi bi-chevron-down float-end text-secondary"></i>
             </a>
             <ul class="dropdown-menu bg-dark border-0" aria-labelledby="marketingDropdown">
-                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-plus-square"></i> Create Post</a></li>
+                <li><a class="dropdown-item text-white" href="./createPost.php"><i class="bi bi-plus-square"></i> Create Post</a></li>
                 <li><a class="dropdown-item text-white" href="#"><i class="bi bi-eye"></i> View Post</a></li>
             </ul>
         </div>
@@ -47,7 +47,7 @@
                 <i class="bi bi-file-earmark-text icon-margin text-secondary"></i> Updates <i class="bi bi-chevron-down float-end text-secondary"></i>
             </a>
             <ul class="dropdown-menu bg-dark border-0" aria-labelledby="updatesDropdown">
-                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-plus-square"></i> Create Post</a></li>
+                <li><a class="dropdown-item text-white" href="./createPost.php"><i class="bi bi-plus-square"></i> Create Post</a></li>
                 <li><a class="dropdown-item text-white" href="#"><i class="bi bi-eye"></i> View Post</a></li>
             </ul>
         </div>
