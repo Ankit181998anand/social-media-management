@@ -1,5 +1,5 @@
 <?php 
-    // require_once 'dbcon.php'; // Include your database connection file
+    require_once 'dbcon.php'; 
 ?>
 
 <!DOCTYPE html>
